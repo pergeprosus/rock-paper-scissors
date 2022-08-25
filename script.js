@@ -4,16 +4,14 @@
 //picks between rock paper or scissors. Ensure that the random picking
 //system works with consolelogs before making any other portions of the game.
 
-let choices = ['rock','paper','scissors']
+let choices = ['rock', 'paper', 'scissors']
 
-//function getComputerChoice(computerSelection) {
+function getComputerChoice(computerSelection) {
     let random = Math.floor(Math.random() * choices.length);
-    console.log(random)
-//}
-
-
-
-
+    computerSelection = random;
+    console.log(computerSelection)
+}
+getComputerChoice()
 
 
 
