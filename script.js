@@ -14,6 +14,13 @@ function getComputerChoice(computerSelection) {
 getComputerChoice()
 
 
+//Create a function called getPlayerChoice that lets the player select their play for a round of the game.
+
+function getPlayerChoice(playerSelection) {
+    let playerchoice = prompt("Make your play:\n")
+    console.log(playerchoice)
+}
+getPlayerChoice()
 
 
 // Create a function that actually plays the round. It will include two
