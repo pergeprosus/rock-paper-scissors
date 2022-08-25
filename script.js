@@ -6,9 +6,10 @@
 
 let choices = ['rock','paper','scissors']
 
-function getComputerChoice(computerSelection) {
-
-}
+//function getComputerChoice(computerSelection) {
+    let random = Math.floor(Math.random() * choices.length);
+    console.log(random)
+//}
 
 
 
