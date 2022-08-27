@@ -11,21 +11,30 @@ function getComputerChoice(computerSelection) {
     computerSelection = choices[random]
     console.log(computerSelection)
 }
-getComputerChoice()
+
+
+
+function getPlayerChoice(playerSelection) {
+    let playerChoice = prompt("Make your play");
+    let lowercase = playerChoice.toLowerCase();
+     playerSelection = lowercase;
+     console.log(playerSelection)
+}
+
 
 // Create a function that actually plays the round. It will include two
 //elements called playerSelection (NOT CASE SENSITIVE) and computerSelection, followed by
 //a string that displays the winner and how they won (i.e rock over scissors)
 
 function playRound(computerSelection, playerSelection) {
-    let playerChoice = prompt("Make your play");
-    let lowercase = playerChoice.toLowerCase();
-    console.log(lowercase)
+    let playerPoints = 0;
+    let computerPoints = 0;
+    //if (computerSelection == "rock" & playerSelection)
 
 }
-
-
-
+let computerSelection = getComputerChoice();
+let playerSelection = getPlayerChoice();
+playRound();
 
 
 
