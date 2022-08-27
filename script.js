@@ -8,7 +8,7 @@ let choices = ['rock', 'paper', 'scissors']
 
 function getComputerChoice(computerSelection) {
     let random = Math.floor(Math.random() * choices.length);
-    computerSelection = random;
+    computerSelection = choices[random]
     console.log(computerSelection)
 }
 getComputerChoice()
@@ -20,15 +20,11 @@ getComputerChoice()
 function playRound(computerSelection, playerSelection) {
     let playerChoice = prompt("Make your play");
     let lowercase = playerChoice.toLowerCase();
-    if (lowercase !== "rock") {
-        console.log("YOU MESSED UP!!!!")
-    }
-    else{
-        console.log("YOU DID IT RIGHT")
-    }
     console.log(lowercase)
+
 }
-playRound()
+
+
 
 
 
