@@ -18,6 +18,8 @@ getComputerChoice()
 
 function playRound(computerSelection, playerSelection) {
     let playerChoice = prompt("Make your play");
+    let lowercase = playerChoice.toLowerCase();
+    console.log(lowercase)
 }
 playRound()
 // Create a function that actually plays the round. It will include two
