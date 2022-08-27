@@ -27,21 +27,65 @@ function getPlayerChoice(playerSelection) {
 //a string that displays the winner and how they won (i.e rock over scissors)
 
 function playRound() {
+
     let playerPoints = 0;
     let computerPoints = 0;
-    let win = "You win!";
-    let lose = "You lose!";
-    if (computerSelection == 'rock' && playerSelection == 'rock') {
-       console.log("GET FRICKED!!!!")
+    let win = "You win this round.";
+    let lose = "You lose this round.";
+    let draw = "Nobody wins this round."
+
+
+    //Output for a tie
+    if (computerSelection == playerSelection) {
+        playerPoints++;
+        console.log("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + draw + "")
+    }
+    else;
+    //Outputs for rock and scissors
+    if (computerSelection == 'rock' && playerSelection == 'scissors') {
+        playerPoints++;
+        console.log("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "")
     }
     else;
 
-    console.log("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "")
+    if (computerSelection == 'scissors' && playerSelection == 'rock') {
+        playerPoints++;
+        console.log("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "")
+    }
+    else;
+    //Outputs for rock and paper
+    if (computerSelection == 'rock' && playerSelection == 'paper') {
+        playerPoints++;
+        console.log("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "")
+    }
+    else;
+
+    if (computerSelection == 'paper' && playerSelection == 'rock') {
+        playerPoints++;
+        console.log("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "")
+    }
+    else;
+    //Outputs for paper and scissors
+    if (computerSelection == 'paper' && playerSelection == 'scissors') {
+        playerPoints++;
+        console.log("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "")
+    }
+    else;
+
+    if (computerSelection == 'scissors' && playerSelection == 'paper') {
+        playerPoints++;
+        console.log("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "")
+    }
+    else;
+
 
 }
 let computerSelection = getComputerChoice();
 let playerSelection = getPlayerChoice();
+
 playRound();
+
+
 
 
 
