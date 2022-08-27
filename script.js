@@ -17,9 +17,9 @@ getComputerChoice()
 //Create a function called getPlayerChoice that lets the player select their play for a round of the game.
 
 function playRound(computerSelection, playerSelection) {
-    
+    let playerChoice = prompt("Make your play");
 }
-
+playRound()
 // Create a function that actually plays the round. It will include two
 //elements called playerSelection (NOT CASE SENSITIVE) and computerSelection, followed by
 //a string that displays the winner and how they won (i.e rock over scissors)
