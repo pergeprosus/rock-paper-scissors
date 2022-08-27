@@ -8,8 +8,8 @@ let choices = ['rock', 'paper', 'scissors']
 
 function getComputerChoice(computerSelection) {
     let random = Math.floor(Math.random() * choices.length);
-    computerSelection = choices[random]
-    console.log(computerSelection)
+    computerSelection = choices[random];
+    return computerSelection;
 }
 
 
@@ -17,8 +17,8 @@ function getComputerChoice(computerSelection) {
 function getPlayerChoice(playerSelection) {
     let playerChoice = prompt("Make your play");
     let lowercase = playerChoice.toLowerCase();
-     playerSelection = lowercase;
-     console.log(playerSelection)
+    playerSelection = lowercase;
+    return playerSelection;
 }
 
 
@@ -26,10 +26,17 @@ function getPlayerChoice(playerSelection) {
 //elements called playerSelection (NOT CASE SENSITIVE) and computerSelection, followed by
 //a string that displays the winner and how they won (i.e rock over scissors)
 
-function playRound(computerSelection, playerSelection) {
+function playRound() {
     let playerPoints = 0;
     let computerPoints = 0;
-    //if (computerSelection == "rock" & playerSelection)
+    let win = "You win!";
+    let lose = "You lose!";
+    if (computerSelection == 'rock' && playerSelection == 'rock') {
+       console.log("GET FRICKED!!!!")
+    }
+    else;
+
+    console.log("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "")
 
 }
 let computerSelection = getComputerChoice();
