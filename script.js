@@ -83,20 +83,20 @@ function playRound() {
     }
     else;
 }
-let computerSelection = getComputerChoice();
-let playerSelection = getPlayerChoice();
+computerSelection = getComputerChoice();
+playerSelection = getPlayerChoice();
 
-
-    for (i = 2; i < 5; i++) {
+function game() {
+    for (let i = 0; i < 5; i++) {
         playRound();
+        computerSelection = getComputerChoice();
+        playerSelection = getPlayerChoice();
     }
-    if (computerPoints > playerPoints) {
-        console.log('YOU LOSE!!!!!!')
-    }
-    else if (computerPoints == playerPoints)
-    {
-        console.log('NOBODY WINS!!!!')
-    }
+}
+game();
+
+
+
 
 
 
