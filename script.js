@@ -1,27 +1,19 @@
 //Pseudocode(?)
-
 //Create a function called getComputerChoice that randomly
 //picks between rock paper or scissors. Ensure that the random picking
 //system works with consolelogs before making any other portions of the game.
-
 let choices = ['rock', 'paper', 'scissors']
-
 function getComputerChoice(computerSelection) {
     let random = Math.floor(Math.random() * choices.length);
     computerSelection = choices[random];
     return computerSelection;
 }
-
-
-
 function getPlayerChoice(playerSelection) {
     let playerChoice = prompt("Make your play");
     let lowercase = playerChoice.toLowerCase();
     playerSelection = lowercase;
     return playerSelection;
 }
-
-
 // Create a function that actually plays the round. It will include two
 //elements called playerSelection (NOT CASE SENSITIVE) and computerSelection, followed by
 //a string that displays the winner and how they won (i.e rock over scissors)
@@ -31,8 +23,6 @@ function playRound() {
     let win = "You win this round.";
     let lose = "You lose this round.";
     let draw = "Nobody wins this round."
-
-
     //Output for a tie
     if (computerSelection == playerSelection) {
         playerPoints++;
@@ -47,7 +37,6 @@ function playRound() {
         return;
     }
     else;
-
     if (computerSelection == 'scissors' && playerSelection == 'rock') {
         playerPoints++;
         console.log("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "")
@@ -61,7 +50,6 @@ function playRound() {
         return;
     }
     else;
-
     if (computerSelection == 'paper' && playerSelection == 'rock') {
         computerPoints++;
         console.log("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "")
@@ -75,7 +63,6 @@ function playRound() {
         return;
     }
     else;
-
     if (computerSelection == 'scissors' && playerSelection == 'paper') {
         computerPoints++;
         console.log("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "")
@@ -86,7 +73,6 @@ function playRound() {
 // Give definitions to the parameters which execute the functions to obtain each number
 computerSelection = getComputerChoice();
 playerSelection = getPlayerChoice();
-
 function game() {
     for (let i = 0; i < 5; i++) {
         playRound();
