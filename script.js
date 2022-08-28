@@ -83,6 +83,7 @@ function playRound() {
     }
     else;
 }
+// Give definitions to the parameters which execute the functions to obtain each number
 computerSelection = getComputerChoice();
 playerSelection = getPlayerChoice();
 
@@ -92,6 +93,16 @@ function game() {
         computerSelection = getComputerChoice();
         playerSelection = getPlayerChoice();
     }
+    let win = "You win!";
+    let lose = "You lose!";
+    let result;
+    if (computerPoints > playerPoints) {
+        result = lose;
+    }
+    else if (playerPoints > computerPoints) {
+        result = win;
+    }
+    console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
 }
 game();
 
