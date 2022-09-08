@@ -1,0 +1,22 @@
+body {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+#buttonbox {
+    border: 3px solid black;
+    align-items: center;
+    display: flex;
+    padding: 8px;
+}
+
+#all {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    padding: 5px;
+}
