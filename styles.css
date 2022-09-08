@@ -87,12 +87,15 @@ button {
 #smile {
     max-height: 50px;
     max-width: 50px;
-    margin: 0;
+    filter: drop-shadow(1px 3px 1px black)
 }
 
 #fulltitle {
-    border: 1px solid black;
     flex-direction: row;
     display: flex;
-    align-items: center;
+}
+
+#you {
+    justify-content: center;
+    align-self: center;
 }
