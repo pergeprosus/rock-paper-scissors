@@ -6,7 +6,8 @@ body {
     background-color: #fff4e6;
 }
 
-#buttonbox {
+#buttonbox,
+#buttonbox2 {
     border: 3px solid black;
     align-items: center;
     display: flex;
@@ -14,6 +15,7 @@ body {
     border-radius: 5px;
     background-color: #be9b7b;
     flex-direction: column;
+    margin: 50px;
 }
 
 #all {
@@ -45,6 +47,7 @@ button {
     flex-direction: column;
     align-items: center;
     min-height: 140px;
+    text-shadow: 3px 3px black;;
 }
 
 #title,
@@ -53,11 +56,14 @@ button {
     color: white;
 }
 
-#buttontitle {
+#buttontitle,
+#buttontitle2 {
     color: black;
     text-shadow: 1px 1px #4b3832;
 }
 
 #bothboxes {
     border: 1px solid black;
+    flex-direction: row;
+    display: flex;
 }
