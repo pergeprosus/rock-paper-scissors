@@ -1,8 +1,9 @@
 body {
- display: flex;
- flex-direction: column;
- margin: 0;
- min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #fff4e6;
 }
 
 #buttonbox {
@@ -11,6 +12,8 @@ body {
     display: flex;
     padding: 8px;
     border-radius: 5px;
+    background-color: #be9b7b;
+    flex-direction: column;
 }
 
 #all {
@@ -30,10 +33,11 @@ button {
     font-size: 18px;
     text-align: center;
     padding: 0;
+    background: #fff4e6;
 }
 
 #header {
-    background: pink;
+    background: #4b3832;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -41,6 +45,8 @@ button {
     min-height: 140px;
 }
 
-h1, h2 {
+#title,
+#subtitle {
     margin: 0;
+    color: white;
 }
