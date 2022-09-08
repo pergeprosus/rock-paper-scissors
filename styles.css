@@ -19,11 +19,12 @@ body {
     align-items: center;
 }
 
-.button {
-    padding: 5px;
+button {
+    margin: 8px;
 }
 
 #header {
     background: pink;
     display: flex;
+    justify-content: center;
 }
