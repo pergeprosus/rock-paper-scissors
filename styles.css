@@ -84,7 +84,8 @@ button {
     font-size: 30px;
 }
 
-#smile {
+#smile,
+#robot {
     max-height: 50px;
     max-width: 50px;
     filter: drop-shadow(1px 3px 1px black)
