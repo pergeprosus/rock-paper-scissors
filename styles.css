@@ -91,12 +91,10 @@ button {
     filter: drop-shadow(1px 3px 1px black)
 }
 
-#fulltitle {
+#fulltitle,
+#fulltitle2 {
     flex-direction: row;
     display: flex;
+    align-items: center;
 }
 
-#you {
-    justify-content: center;
-    align-self: center;
-}
