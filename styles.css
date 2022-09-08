@@ -73,3 +73,13 @@ button {
     display: flex;
     font-weight: bold;
 }
+
+#results {
+    border: 2px solid blue;
+}
+
+#round {
+    display: flex;
+    margin: 10px;
+    font-size: 30px;
+}
