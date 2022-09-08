@@ -83,3 +83,16 @@ button {
     margin: 10px;
     font-size: 30px;
 }
+
+#smile {
+    max-height: 50px;
+    max-width: 50px;
+    margin: 0;
+}
+
+#fulltitle {
+    border: 1px solid black;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
