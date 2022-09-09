@@ -126,7 +126,7 @@ height: 40px;
 }
 
 #logheader {
-    font-size: 20px;
+    font-size: 10px;
     margin: 0;
 }
 
@@ -138,4 +138,17 @@ height: 40px;
     justify-content: center;
     color: white;
     text-shadow: 1px 1px black;
+}
+
+#winner {
+    border: 1px solid black;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    min-height: 50px;
+    min-width: 250px;
+    margin: 0px;
+    display: flex;
+    text-align: center;
+    font-size: 40px;
 }
