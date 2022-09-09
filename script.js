@@ -2,10 +2,10 @@ let resoot = document.getElementById("resultslist");
 
 let buttons = document.querySelectorAll('.button');
 
-let pointplayer = document.getElementById("youscore");
+let pointPlayer = document.getElementById("youscorenumber");
 
 
-pointplayer.innerHTML = (" " + playerPoints + "");
+
 
 
 
@@ -36,55 +36,58 @@ function getPlayerChoice(playerSelection) {
 let playerPoints = 0;
 let computerPoints = 0;
 function playRound() {
+    
+    pointPlayer.innerHTML = (" " + playerPoints + "");
     let win = "You win this round.";
     let lose = "You lose this round.";
     let draw = "Nobody wins this round."
     //Output for a tie
     if (computerSelection == playerSelection) {
         playerPoints++;
-        resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + draw + "")
+        resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + draw + "");
         return;
     }
     else;
     //Outputs for rock and scissors
     if (computerSelection == 'rock' && playerSelection == 'scissors') {
         computerPoints++;
-        resoot.innerHTML =("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "")
+        resoot.innerHTML =("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "");
         return;
     }
     else;
     if (computerSelection == 'scissors' && playerSelection == 'rock') {
         playerPoints++;
-        resoot.innerHTML =("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "")
+        resoot.innerHTML =("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "");
         return;
     }
     else;
     //Outputs for rock and paper
     if (computerSelection == 'rock' && playerSelection == 'paper') {
         playerPoints++;
-        resoot.innerHTML =("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "")
+        resoot.innerHTML =("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "");
         return;
     }
     else;
     if (computerSelection == 'paper' && playerSelection == 'rock') {
         computerPoints++;
-        resoot.innerHTML =("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "")
+        resoot.innerHTML =("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "");
         return;
     }
     else;
     //Outputs for paper and scissors
     if (computerSelection == 'paper' && playerSelection == 'scissors') {
         playerPoints++;
-        resoot.innerHTML =("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "")
+        resoot.innerHTML =("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "");
         return;
     }
     else;
     if (computerSelection == 'scissors' && playerSelection == 'paper') {
         computerPoints++;
-        resoot.innerHTML =("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "")
+        resoot.innerHTML =("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "");
         return;
     }
     else;
+
 }
 // Give definitions to the parameters which execute the functions to obtain each number
 computerSelection = getComputerChoice();
