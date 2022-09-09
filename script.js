@@ -1,9 +1,11 @@
-let resoot = document.getElementById("resultslist")
+let resoot = document.getElementById("resultslist");
+
+let buttons = document.querySelectorAll('.button');
+
+let pointplayer = document.getElementById("youscore");
 
 
-
-
-
+pointplayer.innerHTML = (" " + playerPoints + "");
 
 
 
