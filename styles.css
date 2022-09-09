@@ -161,7 +161,8 @@ height: 40px;
     box-shadow: 0 8px 1rem black;
 }
 
-#youscorebox {
+#youscorebox,
+#botscorebox {
     flex-direction: row;
     align-items: center;
     text-align: center;

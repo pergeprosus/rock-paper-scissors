@@ -4,7 +4,7 @@ let buttons = document.querySelectorAll('.button');
 
 let pointPlayer = document.getElementById("youscorenumber");
 
-
+let pointComputer = document.getElementById("botscorenumber");
 
 
 
@@ -38,6 +38,7 @@ let computerPoints = 0;
 function playRound() {
     
     pointPlayer.innerHTML = (" " + playerPoints + "");
+    pointComputer.innerHTML = (" " + computerPoints + "");
     let win = "You win this round.";
     let lose = "You lose this round.";
     let draw = "Nobody wins this round."
