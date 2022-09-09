@@ -1,3 +1,20 @@
+let buttons = document.querySelectorAll('.button')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Pseudocode(?)
 //Create a function called getComputerChoice that randomly
 //picks between rock paper or scissors. Ensure that the random picking
