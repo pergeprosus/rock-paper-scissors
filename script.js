@@ -1,7 +1,10 @@
 let buttons = document.querySelectorAll('.button')
 
+document.getElementById("rock").onclick = clicked;
 
-
+function clicked() {
+    buttons.classList.add('pressed');
+}
 
 
 
