@@ -79,6 +79,9 @@ button
     flex: 1;
     justify-content: center;
     display: flex;
+    background: #202020;
+    text-shadow: 1px 1px lightgreen;
+    color: green;
 }
 
 #round {
@@ -116,4 +119,9 @@ height: 40px;
 
 .p {
     font-size: 10px;
+}
+
+#logheader {
+    font-size: 30px;
+    margin: 0;
 }
