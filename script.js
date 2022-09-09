@@ -1,5 +1,5 @@
 let resoot = document.getElementById("resultslist")
-resoot.innerHTML = "New Heading";
+
 
 
 
@@ -40,46 +40,46 @@ function playRound() {
     //Output for a tie
     if (computerSelection == playerSelection) {
         playerPoints++;
-        console.log("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + draw + "")
+        resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + draw + "")
         return;
     }
     else;
     //Outputs for rock and scissors
     if (computerSelection == 'rock' && playerSelection == 'scissors') {
         computerPoints++;
-        console.log("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "")
+        resoot.innerHTML =("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "")
         return;
     }
     else;
     if (computerSelection == 'scissors' && playerSelection == 'rock') {
         playerPoints++;
-        console.log("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "")
+        resoot.innerHTML =("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "")
         return;
     }
     else;
     //Outputs for rock and paper
     if (computerSelection == 'rock' && playerSelection == 'paper') {
         playerPoints++;
-        console.log("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "")
+        resoot.innerHTML =("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "")
         return;
     }
     else;
     if (computerSelection == 'paper' && playerSelection == 'rock') {
         computerPoints++;
-        console.log("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "")
+        resoot.innerHTML =("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "")
         return;
     }
     else;
     //Outputs for paper and scissors
     if (computerSelection == 'paper' && playerSelection == 'scissors') {
         playerPoints++;
-        console.log("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "")
+        resoot.innerHTML =("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "")
         return;
     }
     else;
     if (computerSelection == 'scissors' && playerSelection == 'paper') {
         computerPoints++;
-        console.log("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "")
+        resoot.innerHTML =("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "")
         return;
     }
     else;
