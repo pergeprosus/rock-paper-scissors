@@ -1,11 +1,5 @@
-let buttons = document.querySelectorAll('.button')
-
-document.getElementById("rock").onclick = clicked;
-
-function clicked() {
-    buttons.classList.add('pressed');
-}
-
+let resoot = document.getElementById("resultslist")
+resoot.innerHTML = "New Heading";
 
 
 
@@ -94,11 +88,10 @@ function playRound() {
 computerSelection = getComputerChoice();
 playerSelection = getPlayerChoice();
 function game() {
-    for (let i = 0; i < 5; i++) {
         playRound();
         computerSelection = getComputerChoice();
         playerSelection = getPlayerChoice();
-    }
+    
     let win = "You win!";
     let lose = "You lose!";
     let result;

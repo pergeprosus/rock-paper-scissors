@@ -87,6 +87,8 @@ button
     background: #202020;
     text-shadow: 1px 1px lightgreen;
     color: green;
+    flex-direction: column;
+    align-items: center;
 }
 
 #round {
