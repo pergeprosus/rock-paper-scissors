@@ -36,6 +36,8 @@ let round = 1;
 let playerPoints = 0;
 let computerPoints = 0;
 roond.innerHTML = ("" + round + "");
+pointPlayer.innerHTML = (" " + playerPoints + "");
+pointComputer.innerHTML = (" " + computerPoints + "");
 function playRound() {
     let computerSelection = getComputerChoice();
     let playerSelection = getPlayerChoice();
@@ -48,6 +50,8 @@ function playRound() {
         playerPoints++;
         round++;
         roond.innerHTML = ("" + round + "");
+        pointPlayer.innerHTML = (" " + playerPoints + "");
+        pointComputer.innerHTML = (" " + computerPoints + "");
         return;
     }
     else;
@@ -57,6 +61,8 @@ function playRound() {
         resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "");
         round++;
         roond.innerHTML = ("" + round + "");
+        pointPlayer.innerHTML = (" " + playerPoints + "");
+        pointComputer.innerHTML = (" " + computerPoints + "");
         return;
     }
     else;
@@ -65,6 +71,8 @@ function playRound() {
         resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "");
         round++;
         roond.innerHTML = ("" + round + "");
+        pointPlayer.innerHTML = (" " + playerPoints + "");
+        pointComputer.innerHTML = (" " + computerPoints + "");
         return;
     }
     else;
@@ -74,6 +82,8 @@ function playRound() {
         resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "");
         round++;
         roond.innerHTML = ("" + round + "");
+        pointPlayer.innerHTML = (" " + playerPoints + "");
+        pointComputer.innerHTML = (" " + computerPoints + "");
         return;
     }
     else;
@@ -82,6 +92,8 @@ function playRound() {
         resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "");
         round++;
         roond.innerHTML = ("" + round + "");
+        pointPlayer.innerHTML = (" " + playerPoints + "");
+        pointComputer.innerHTML = (" " + computerPoints + "");
         return;
     }
     else;
@@ -91,6 +103,8 @@ function playRound() {
         resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "");
         round++;
         roond.innerHTML = ("" + round + "");
+        pointPlayer.innerHTML = (" " + playerPoints + "");
+        pointComputer.innerHTML = (" " + computerPoints + "");
         return;
     }
     else;
@@ -99,6 +113,8 @@ function playRound() {
         resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "");
         round++;
         roond.innerHTML = ("" + round + "");
+        pointPlayer.innerHTML = (" " + playerPoints + "");
+        pointComputer.innerHTML = (" " + computerPoints + "");
         return;
     }
     else;
@@ -120,8 +136,7 @@ function game() {
     }
     console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
 }
-pointPlayer.innerHTML = (" " + playerPoints + "");
-pointComputer.innerHTML = (" " + computerPoints + "");
+
 
 
 
