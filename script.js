@@ -6,7 +6,7 @@ let pointPlayer = document.getElementById("youscorenumber");
 
 let pointComputer = document.getElementById("botscorenumber");
 
-
+let roond = document.getElementById("round");
 
 
 
@@ -25,20 +25,20 @@ function getComputerChoice(computerSelection) {
     return computerSelection;
 }
 function getPlayerChoice(playerSelection) {
-    let playerChoice = prompt("Make your play");
-    let lowercase = playerChoice.toLowerCase();
-    playerSelection = lowercase;
+    playerSelection = 'rock'
     return playerSelection;
 }
 
 // Create a function that actually plays the round. It will include two
 //elements called playerSelection (NOT CASE SENSITIVE) and computerSelection, followed by
 //a string that displays the winner and how they won (i.e rock over scissors)
+let round = 1;
 let playerPoints = 0;
 let computerPoints = 0;
 function playRound() {
-  let  computerSelection = getComputerChoice();
-   let playerSelection = getPlayerChoice();
+
+    let computerSelection = getComputerChoice();
+    let playerSelection = getPlayerChoice();
     let win = "You win this round.";
     let lose = "You lose this round.";
     let draw = "Nobody wins this round."
@@ -88,8 +88,8 @@ function playRound() {
         return;
     }
     else;
-
 }
+roond.innerHTML = ("" + round + "")
 // Give definitions to the parameters which execute the functions to obtain each number
 function game() {
     playRound();
