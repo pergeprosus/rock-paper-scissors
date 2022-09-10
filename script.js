@@ -38,20 +38,31 @@ let computerPoints = 0;
 roond.innerHTML = ("" + round + "");
 pointPlayer.innerHTML = (" " + playerPoints + "");
 pointComputer.innerHTML = (" " + computerPoints + "");
-function playRound(chips) {
+function playRound(e) {
     let computerSelection = getComputerChoice();
-    let playerSelection = chips;
+    let playerSelection = e;
     let win = "You win this round.";
     let lose = "You lose this round.";
     let draw = "Nobody wins this round."
     //Output for a tie
+    if (computerPoints < 5 && playerPoints < 5) {
+    
+    
     if (computerSelection == playerSelection) {
         resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + draw + "");
-        playerPoints++;
         round++;
         roond.innerHTML = ("" + round + "");
         pointPlayer.innerHTML = (" " + playerPoints + "");
         pointComputer.innerHTML = (" " + computerPoints + "");
+        if (computerPoints == 5 && playerPoints < computerPoints) {
+            wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
+            //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
+            return;
+        }
+        if (playerPoints == 5 && computerPoints < playerPoints) {
+            wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+            return;
+        }
         return;
     }
     else;
@@ -63,6 +74,15 @@ function playRound(chips) {
         roond.innerHTML = ("" + round + "");
         pointPlayer.innerHTML = (" " + playerPoints + "");
         pointComputer.innerHTML = (" " + computerPoints + "");
+        if (computerPoints == 5 && playerPoints < computerPoints) {
+            wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
+            //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
+            return;
+        }
+        if (playerPoints == 5 && computerPoints < playerPoints) {
+            wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+            return;
+        }
         return;
     }
     else;
@@ -73,6 +93,15 @@ function playRound(chips) {
         roond.innerHTML = ("" + round + "");
         pointPlayer.innerHTML = (" " + playerPoints + "");
         pointComputer.innerHTML = (" " + computerPoints + "");
+        if (computerPoints == 5 && playerPoints < computerPoints) {
+            wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
+            //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
+            return;
+        }
+        if (playerPoints == 5 && computerPoints < playerPoints) {
+            wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+            return;
+        }
         return;
     }
     else;
@@ -84,9 +113,18 @@ function playRound(chips) {
         roond.innerHTML = ("" + round + "");
         pointPlayer.innerHTML = (" " + playerPoints + "");
         pointComputer.innerHTML = (" " + computerPoints + "");
+        if (computerPoints == 5 && playerPoints < computerPoints) {
+            wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
+            //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
+
+        }
+        if (playerPoints == 5 && computerPoints < playerPoints) {
+            wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+
+        }
         return;
     }
-    
+
     else;
     if (computerSelection == 'paper' && playerSelection == 'rock') {
         computerPoints++;
@@ -95,6 +133,15 @@ function playRound(chips) {
         roond.innerHTML = ("" + round + "");
         pointPlayer.innerHTML = (" " + playerPoints + "");
         pointComputer.innerHTML = (" " + computerPoints + "");
+        if (computerPoints == 5 && playerPoints < computerPoints) {
+            wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
+            //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
+
+        }
+        if (playerPoints == 5 && computerPoints < playerPoints) {
+            wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+
+        }
         return;
     }
     else;
@@ -106,6 +153,14 @@ function playRound(chips) {
         roond.innerHTML = ("" + round + "");
         pointPlayer.innerHTML = (" " + playerPoints + "");
         pointComputer.innerHTML = (" " + computerPoints + "");
+        if (computerPoints == 5 && playerPoints < computerPoints) {
+            wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
+            //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
+
+        }
+        if (playerPoints == 5 && computerPoints < playerPoints) {
+            wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+        }
         return;
     }
     else;
@@ -116,25 +171,21 @@ function playRound(chips) {
         roond.innerHTML = ("" + round + "");
         pointPlayer.innerHTML = (" " + playerPoints + "");
         pointComputer.innerHTML = (" " + computerPoints + "");
+        if (computerPoints == 5 && playerPoints < computerPoints) {
+            wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
+            //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
+        }
+        if (playerPoints == 5 && computerPoints < playerPoints) {
+            wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+        }
         return;
     }
+    else return;
+    }
     //if (computerPoints > 5 && playerPoints < computerPoints || playerPoints > 5 && computerPoints < playerPoints)
-   // return 'poop';
+    // return 'poop';
 }
 // Give definitions to the parameters which execute the functions to obtain each number
-  if (computerPoints > 5 && playerPoints < computerPoints) {
-  
-    let win = "You win!";
-    let lose = "You lose!";
-    let result;
-    if (computerPoints > playerPoints) {
-        wonner.innerHTML = ("YOU SUCK!!!!!");
-    }
-    if (playerPoints > computerPoints) {
-        wonner.innerHTML = ("YOU DONT SUCK!!!!!");
-    }
-    console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
-}
 
 
 

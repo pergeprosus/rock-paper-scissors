@@ -24,8 +24,7 @@ body {
     align-items: center;
 }
 
-button
- {
+button {
     margin: 8px;
     border: 2px solid black;
     border-radius: 5px;
@@ -36,7 +35,7 @@ button
     padding: 5px;
     background: #fff4e6;
     font-weight: bolder;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: center;
     box-shadow: 1px 3px black;
 }
@@ -72,9 +71,9 @@ button
 #youscore {
     justify-content: center;
     text-align: center;
-    font-weight:bolder;
-    font-family:'Times New Roman', Times, serif;
-    background:#4b3832;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    background: #4b3832;
     margin: 0;
     display: flex;
     color: white;
@@ -120,9 +119,9 @@ button
 
 #icon {
 
-width: 70px;
-height: 70px;
-margin: 0;
+    width: 70px;
+    height: 70px;
+    margin: 0;
 
 }
 
@@ -137,7 +136,7 @@ margin: 0;
 
 #footer {
     flex: 0.3;
-    background:#4b3832;
+    background: #4b3832;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -156,6 +155,7 @@ margin: 0;
     display: flex;
     text-align: center;
     font-size: 40px;
+    font-weight: bolder;
 }
 
 .pressed {
@@ -185,7 +185,7 @@ margin: 0;
     box-shadow: 0 8px 1rem black;
 }
 
-#chosen {
+button.chosen {
     margin: 8px;
     border: 4px solid blue;
     border-radius: 5px;
@@ -196,7 +196,7 @@ margin: 0;
     padding: 5px;
     background: #fff4e6;
     font-weight: bolder;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: center;
     box-shadow: 1px 3px black;
 }
