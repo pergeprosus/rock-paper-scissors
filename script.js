@@ -58,12 +58,12 @@ function playRound(e) {
             pointComputer.innerHTML = (" " + computerPoints + "");
             sad.play();
             if (computerPoints == 5 && playerPoints < computerPoints) {
-                wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
+                wonner.innerHTML = ("YOU LOSE!!!");
                 //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
                 return;
             }
             if (playerPoints == 5 && computerPoints < playerPoints) {
-                wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+                wonner.innerHTML = ("YOU WIN!!!");
                 victory.play();
                 return;
             }
@@ -80,12 +80,12 @@ function playRound(e) {
             pointComputer.innerHTML = (" " + computerPoints + "");
             sad.play();
             if (computerPoints == 5 && playerPoints < computerPoints) {
-                wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
+                wonner.innerHTML = ("YOU LOSE!!!");
                 defeat.play();
                 return;
             }
             if (playerPoints == 5 && computerPoints < playerPoints) {
-                wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+                wonner.innerHTML = ("YOU WIN!!!");
                 victory.play();
                 return;
             }
@@ -101,12 +101,12 @@ function playRound(e) {
             pointComputer.innerHTML = (" " + computerPoints + "");
             ding.play();
             if (computerPoints == 5 && playerPoints < computerPoints) {
-                wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
+                wonner.innerHTML = ("YOU LOSE!!!");
                 defeat.play();
                 return;
             }
             if (playerPoints == 5 && computerPoints < playerPoints) {
-                wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+                wonner.innerHTML = ("YOU WIN!!!");
                 victory.play();
                 return;
             }
@@ -123,11 +123,11 @@ function playRound(e) {
             pointComputer.innerHTML = (" " + computerPoints + "");
             ding.play();
             if (computerPoints == 5 && playerPoints < computerPoints) {
-                wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
+                wonner.innerHTML = ("YOU LOSE!!!");
                 defeat.play();                
             }
             if (playerPoints == 5 && computerPoints < playerPoints) {
-                wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+                wonner.innerHTML = ("YOU WIN!!!");
                 victory.play();
             }
             return;
@@ -143,11 +143,11 @@ function playRound(e) {
             pointComputer.innerHTML = (" " + computerPoints + "");
             sad.play();
             if (computerPoints == 5 && playerPoints < computerPoints) {
-                wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
+                wonner.innerHTML = ("YOU LOSE!!!");
                 defeat.play();
             }
             if (playerPoints == 5 && computerPoints < playerPoints) {
-                wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+                wonner.innerHTML = ("YOU WIN!!!");
                 victory.play();
             }
             return;
@@ -163,11 +163,11 @@ function playRound(e) {
             pointComputer.innerHTML = (" " + computerPoints + "");
             ding.play();
             if (computerPoints == 5 && playerPoints < computerPoints) {
-                wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
+                wonner.innerHTML = ("YOU LOSE!!!");
                 defeat.play();
             }
             if (playerPoints == 5 && computerPoints < playerPoints) {
-                wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+                wonner.innerHTML = ("YOU WIN!!!");
                 victory.play();
             }
             return;
