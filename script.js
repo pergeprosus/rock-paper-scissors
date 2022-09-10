@@ -1,3 +1,4 @@
+//DOM connections
 let resoot = document.getElementById("resultslist");
 
 let buttons = document.querySelectorAll('.button');
@@ -9,6 +10,7 @@ let pointComputer = document.getElementById("botscorenumber");
 let roond = document.getElementById("round");
 
 let wonner = document.getElementById("winner");
+
 
 
 
@@ -46,141 +48,148 @@ function playRound(e) {
     let draw = "Nobody wins this round."
     //Output for a tie
     if (computerPoints < 5 && playerPoints < 5) {
-    
-    
-    if (computerSelection == playerSelection) {
-        resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + draw + "");
-        round++;
-        roond.innerHTML = ("" + round + "");
-        pointPlayer.innerHTML = (" " + playerPoints + "");
-        pointComputer.innerHTML = (" " + computerPoints + "");
-        if (computerPoints == 5 && playerPoints < computerPoints) {
-            wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
-            //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
+
+
+        if (computerSelection == playerSelection) {
+            resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + draw + "");
+            round++;
+            roond.innerHTML = ("" + round + "");
+            pointPlayer.innerHTML = (" " + playerPoints + "");
+            pointComputer.innerHTML = (" " + computerPoints + "");
+            sad.play();
+            if (computerPoints == 5 && playerPoints < computerPoints) {
+                wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
+                //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
+                return;
+            }
+            if (playerPoints == 5 && computerPoints < playerPoints) {
+                wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+                return;
+            }
             return;
         }
-        if (playerPoints == 5 && computerPoints < playerPoints) {
-            wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+        else;
+        //Outputs for rock and scissors
+        if (computerSelection == 'rock' && playerSelection == 'scissors') {
+            computerPoints++;
+            resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "");
+            round++;
+            roond.innerHTML = ("" + round + "");
+            pointPlayer.innerHTML = (" " + playerPoints + "");
+            pointComputer.innerHTML = (" " + computerPoints + "");
+            sad.play();
+            if (computerPoints == 5 && playerPoints < computerPoints) {
+                wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
+                //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
+                return;
+            }
+            if (playerPoints == 5 && computerPoints < playerPoints) {
+                wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+                return;
+            }
             return;
         }
-        return;
-    }
-    else;
-    //Outputs for rock and scissors
-    if (computerSelection == 'rock' && playerSelection == 'scissors') {
-        computerPoints++;
-        resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "");
-        round++;
-        roond.innerHTML = ("" + round + "");
-        pointPlayer.innerHTML = (" " + playerPoints + "");
-        pointComputer.innerHTML = (" " + computerPoints + "");
-        if (computerPoints == 5 && playerPoints < computerPoints) {
-            wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
-            //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
+        else;
+        if (computerSelection == 'scissors' && playerSelection == 'rock') {
+            playerPoints++;
+            resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "");
+            round++;
+            roond.innerHTML = ("" + round + "");
+            pointPlayer.innerHTML = (" " + playerPoints + "");
+            pointComputer.innerHTML = (" " + computerPoints + "");
+            ding.play();
+            if (computerPoints == 5 && playerPoints < computerPoints) {
+                wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
+                //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
+                return;
+            }
+            if (playerPoints == 5 && computerPoints < playerPoints) {
+                wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+                return;
+            }
             return;
         }
-        if (playerPoints == 5 && computerPoints < playerPoints) {
-            wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+        else;
+        //Outputs for rock and paper
+        if (computerSelection == 'rock' && playerSelection == 'paper') {
+            playerPoints++;
+            resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "");
+            round++;
+            roond.innerHTML = ("" + round + "");
+            pointPlayer.innerHTML = (" " + playerPoints + "");
+            pointComputer.innerHTML = (" " + computerPoints + "");
+            ding.play();
+            if (computerPoints == 5 && playerPoints < computerPoints) {
+                wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
+                //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
+
+            }
+            if (playerPoints == 5 && computerPoints < playerPoints) {
+                wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+
+            }
             return;
         }
-        return;
-    }
-    else;
-    if (computerSelection == 'scissors' && playerSelection == 'rock') {
-        playerPoints++;
-        resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "");
-        round++;
-        roond.innerHTML = ("" + round + "");
-        pointPlayer.innerHTML = (" " + playerPoints + "");
-        pointComputer.innerHTML = (" " + computerPoints + "");
-        if (computerPoints == 5 && playerPoints < computerPoints) {
-            wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
-            //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
+
+        else;
+        if (computerSelection == 'paper' && playerSelection == 'rock') {
+            computerPoints++;
+            resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "");
+            round++;
+            roond.innerHTML = ("" + round + "");
+            pointPlayer.innerHTML = (" " + playerPoints + "");
+            pointComputer.innerHTML = (" " + computerPoints + "");
+            sad.play();
+            if (computerPoints == 5 && playerPoints < computerPoints) {
+                wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
+                //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
+
+            }
+            if (playerPoints == 5 && computerPoints < playerPoints) {
+                wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+
+            }
             return;
         }
-        if (playerPoints == 5 && computerPoints < playerPoints) {
-            wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+        else;
+        //Outputs for paper and scissors
+        if (computerSelection == 'paper' && playerSelection == 'scissors') {
+            playerPoints++;
+            resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "");
+            round++;
+            roond.innerHTML = ("" + round + "");
+            pointPlayer.innerHTML = (" " + playerPoints + "");
+            pointComputer.innerHTML = (" " + computerPoints + "");
+            ding.play();
+            if (computerPoints == 5 && playerPoints < computerPoints) {
+                wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
+                //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
+
+            }
+            if (playerPoints == 5 && computerPoints < playerPoints) {
+                wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+            }
             return;
         }
-        return;
-    }
-    else;
-    //Outputs for rock and paper
-    if (computerSelection == 'rock' && playerSelection == 'paper') {
-        playerPoints++;
-        resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "");
-        round++;
-        roond.innerHTML = ("" + round + "");
-        pointPlayer.innerHTML = (" " + playerPoints + "");
-        pointComputer.innerHTML = (" " + computerPoints + "");
-        if (computerPoints == 5 && playerPoints < computerPoints) {
-            wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
-            //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
-
+        else;
+        if (computerSelection == 'scissors' && playerSelection == 'paper') {
+            computerPoints++;
+            resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "");
+            round++;
+            roond.innerHTML = ("" + round + "");
+            pointPlayer.innerHTML = (" " + playerPoints + "");
+            pointComputer.innerHTML = (" " + computerPoints + "");
+            sad.play();
+            if (computerPoints == 5 && playerPoints < computerPoints) {
+                wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
+                //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
+            }
+            if (playerPoints == 5 && computerPoints < playerPoints) {
+                wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
+            }
+            return;
         }
-        if (playerPoints == 5 && computerPoints < playerPoints) {
-            wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
-
-        }
-        return;
-    }
-
-    else;
-    if (computerSelection == 'paper' && playerSelection == 'rock') {
-        computerPoints++;
-        resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "");
-        round++;
-        roond.innerHTML = ("" + round + "");
-        pointPlayer.innerHTML = (" " + playerPoints + "");
-        pointComputer.innerHTML = (" " + computerPoints + "");
-        if (computerPoints == 5 && playerPoints < computerPoints) {
-            wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
-            //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
-
-        }
-        if (playerPoints == 5 && computerPoints < playerPoints) {
-            wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
-
-        }
-        return;
-    }
-    else;
-    //Outputs for paper and scissors
-    if (computerSelection == 'paper' && playerSelection == 'scissors') {
-        playerPoints++;
-        resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "");
-        round++;
-        roond.innerHTML = ("" + round + "");
-        pointPlayer.innerHTML = (" " + playerPoints + "");
-        pointComputer.innerHTML = (" " + computerPoints + "");
-        if (computerPoints == 5 && playerPoints < computerPoints) {
-            wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
-            //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
-
-        }
-        if (playerPoints == 5 && computerPoints < playerPoints) {
-            wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
-        }
-        return;
-    }
-    else;
-    if (computerSelection == 'scissors' && playerSelection == 'paper') {
-        computerPoints++;
-        resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "");
-        round++;
-        roond.innerHTML = ("" + round + "");
-        pointPlayer.innerHTML = (" " + playerPoints + "");
-        pointComputer.innerHTML = (" " + computerPoints + "");
-        if (computerPoints == 5 && playerPoints < computerPoints) {
-            wonner.innerHTML = ("YOU LOSE!!! YOU SUCK!!!!");
-            //console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
-        }
-        if (playerPoints == 5 && computerPoints < playerPoints) {
-            wonner.innerHTML = ("YOU WIN!!! YOU RULE!!!!");
-        }
-        return;
-    }
-    else return;
+        else return;
     }
     //if (computerPoints > 5 && playerPoints < computerPoints || playerPoints > 5 && computerPoints < playerPoints)
     // return 'poop';
