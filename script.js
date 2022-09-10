@@ -8,7 +8,7 @@ let pointComputer = document.getElementById("botscorenumber");
 
 let roond = document.getElementById("round");
 
-
+let wonner = document.getElementById("winner");
 
 
 
@@ -86,6 +86,7 @@ function playRound(chips) {
         pointComputer.innerHTML = (" " + computerPoints + "");
         return;
     }
+    
     else;
     if (computerSelection == 'paper' && playerSelection == 'rock') {
         computerPoints++;
@@ -121,22 +122,20 @@ function playRound(chips) {
    // return 'poop';
 }
 // Give definitions to the parameters which execute the functions to obtain each number
-function game() {
-    playRound();
-    computerSelection = getComputerChoice();
-    playerSelection = getPlayerChoice();
-
+  if (computerPoints > 5 && playerPoints < computerPoints) {
+  
     let win = "You win!";
     let lose = "You lose!";
     let result;
     if (computerPoints > playerPoints) {
-        result = lose;
+        wonner.innerHTML = ("YOU SUCK!!!!!");
     }
-    else if (playerPoints > computerPoints) {
-        result = win;
+    if (playerPoints > computerPoints) {
+        wonner.innerHTML = ("YOU DONT SUCK!!!!!");
     }
     console.log("You won " + playerPoints + " rounds, and the computer won " + computerPoints + " rounds. " + result + "")
 }
+
 
 
 
