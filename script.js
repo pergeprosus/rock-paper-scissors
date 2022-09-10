@@ -35,8 +35,8 @@ function getPlayerChoice(playerSelection) {
 let round = 1;
 let playerPoints = 0;
 let computerPoints = 0;
+roond.innerHTML = ("" + round + "");
 function playRound() {
-
     let computerSelection = getComputerChoice();
     let playerSelection = getPlayerChoice();
     let win = "You win this round.";
@@ -46,6 +46,8 @@ function playRound() {
     if (computerSelection == playerSelection) {
         resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + draw + "");
         playerPoints++;
+        round++;
+        roond.innerHTML = ("" + round + "");
         return;
     }
     else;
@@ -53,12 +55,16 @@ function playRound() {
     if (computerSelection == 'rock' && playerSelection == 'scissors') {
         computerPoints++;
         resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "");
+        round++;
+        roond.innerHTML = ("" + round + "");
         return;
     }
     else;
     if (computerSelection == 'scissors' && playerSelection == 'rock') {
         playerPoints++;
         resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "");
+        round++;
+        roond.innerHTML = ("" + round + "");
         return;
     }
     else;
@@ -66,12 +72,16 @@ function playRound() {
     if (computerSelection == 'rock' && playerSelection == 'paper') {
         playerPoints++;
         resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "");
+        round++;
+        roond.innerHTML = ("" + round + "");
         return;
     }
     else;
     if (computerSelection == 'paper' && playerSelection == 'rock') {
         computerPoints++;
         resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "");
+        round++;
+        roond.innerHTML = ("" + round + "");
         return;
     }
     else;
@@ -79,17 +89,20 @@ function playRound() {
     if (computerSelection == 'paper' && playerSelection == 'scissors') {
         playerPoints++;
         resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + win + "");
+        round++;
+        roond.innerHTML = ("" + round + "");
         return;
     }
     else;
     if (computerSelection == 'scissors' && playerSelection == 'paper') {
         computerPoints++;
         resoot.innerHTML = ("You chose " + playerSelection + ", and the computer chose " + computerSelection + ". " + lose + "");
+        round++;
+        roond.innerHTML = ("" + round + "");
         return;
     }
     else;
 }
-roond.innerHTML = ("" + round + "")
 // Give definitions to the parameters which execute the functions to obtain each number
 function game() {
     playRound();
