@@ -38,9 +38,9 @@ let computerPoints = 0;
 roond.innerHTML = ("" + round + "");
 pointPlayer.innerHTML = (" " + playerPoints + "");
 pointComputer.innerHTML = (" " + computerPoints + "");
-function playRound() {
+function playRound(chips) {
     let computerSelection = getComputerChoice();
-    let playerSelection = getPlayerChoice();
+    let playerSelection = chips;
     let win = "You win this round.";
     let lose = "You lose this round.";
     let draw = "Nobody wins this round."
@@ -117,7 +117,8 @@ function playRound() {
         pointComputer.innerHTML = (" " + computerPoints + "");
         return;
     }
-    else;
+    //if (computerPoints > 5 && playerPoints < computerPoints || playerPoints > 5 && computerPoints < playerPoints)
+   // return 'poop';
 }
 // Give definitions to the parameters which execute the functions to obtain each number
 function game() {
